@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { Link, useParams } from '@tanstack/react-router'
 import { getCaseStudyById } from '../../data/caseStudies'
-const caseStudyBg = '/assets/images/2026/c.png'
-const caseStudyBgMobile = '/assets/images/2026/case-study-bg-1.png'
+import { getAssetPath } from '../../lib/utils'
+const caseStudyBg = getAssetPath('/assets/images/2026/c.png')
+const caseStudyBgMobile = getAssetPath('/assets/images/2026/case-study-bg-1.png')
 import '../case-studies/CaseStudies.css'
 
 export default function CaseStudyDetail() {

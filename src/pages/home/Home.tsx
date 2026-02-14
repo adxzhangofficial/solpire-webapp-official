@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import "./Home.css"
+import { getAssetPath } from "../../lib/utils"
 import {
   HeroSection,
   CompanyIntro,
@@ -53,7 +54,7 @@ export const Home = () => {
 
       {/* 12. Team Section */}
       <SectionTitle title="关于我们" variant="about" />
-      <SectionDivider variant="image" imageSrc="/assets/images/line-2.svg" imageClassName="divider divider-6" />
+      <SectionDivider variant="image" imageSrc={getAssetPath('/assets/images/line-2.svg')} imageClassName="divider divider-6" />
       <TeamSection />
 
       {/* 13. Contact CTA */}

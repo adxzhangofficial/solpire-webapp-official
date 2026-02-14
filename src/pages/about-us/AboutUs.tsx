@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { TeamSection } from "../../components/home"
+import { getAssetPath } from "../../lib/utils"
 
 export function AboutUs() {
   useEffect(() => {
@@ -45,7 +46,7 @@ export function AboutUs() {
             <h2 className="section-hea mb-3 mb-md-0">公司介绍</h2>
             <div className="company-logo-container">
               <img
-                src="/assets/images/-----20250704155956-40-1.png"
+                src={getAssetPath('/assets/images/-----20250704155956-40-1.png')}
                 alt="SOLPHIRE Logo"
                 className="img-fluid"
               />

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import MeetingModal from "../../components/meeting-modal/MeetingModal"
+import { getAssetPath } from "../../lib/utils"
 import {
   CompanyIntro,
   PainPoints,
@@ -45,7 +46,7 @@ export function Home2() {
       <section className="hero">
         <div className="hero-bg">
           <img
-            src="/assets/images/-------1.png"
+            src={getAssetPath('/assets/images/-------1.png')}
             alt="Background"
             className="hero-bg-image"
           />
@@ -57,7 +58,7 @@ export function Home2() {
                 <div className="hero-title-wrap">
                   <h1 className="hero-title">GeoOptix</h1>
                   <img
-                    src="/assets/images/logo--1--1.png"
+                    src={getAssetPath('/assets/images/logo--1--1.png')}
                     alt="GeoOptix Logo"
                     className="hero-logo"
                   />
@@ -100,17 +101,17 @@ export function Home2() {
           {/* Background Images */}
           <div className="sol-bg-images">
             <img
-              src="/assets/images/index-pg/img1.png"
+              src={getAssetPath('/assets/images/index-pg/img1.png')}
               alt="Background 1"
               className="sol-bg-img-1"
             />
             <img
-              src="/assets/images/index-pg/img2.png"
+              src={getAssetPath('/assets/images/index-pg/img2.png')}
               alt="Background 2"
               className="sol-bg-img-2"
             />
             <img
-              src="/assets/images/index-pg/img3.png"
+              src={getAssetPath('/assets/images/index-pg/img3.png')}
               alt="Background 3"
               className="sol-bg-img-3"
             />
@@ -129,7 +130,7 @@ export function Home2() {
                   <div className="sol-main-image-section">
                     <div className="sol-main-image-wrapper">
                       <img
-                        src="/assets/images/index-pg/main-gear.png"
+                        src={getAssetPath('/assets/images/index-pg/main-gear.png')}
                         alt="Main Gear"
                         className="sol-main-gear-image"
                       />
@@ -141,7 +142,7 @@ export function Home2() {
                       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((num) => (
                         <div key={num} className="sol-grid-item">
                           <img
-                            src={`/assets/images/index-pg/machine-${num}.png`}
+                            src={getAssetPath(`/assets/images/index-pg/machine-${num}.png`)}
                             alt={`Machine ${num}`}
                             className="sol-grid-image"
                           />
@@ -202,7 +203,7 @@ export function Home2() {
             {/* RIGHT IMAGE */}
             <div className="col-lg-6 col-md-5 col-12 text-center mt-4 mt-md-0">
               <img
-                src="/assets/images/index-pg/Macbook.png"
+                src={getAssetPath('/assets/images/index-pg/Macbook.png')}
                 alt="Macbook"
                 className="img-fluid slph-img"
               />
@@ -280,7 +281,7 @@ export function Home2() {
 
       {/* Team Section */}
       <SectionTitle title="关于我们" variant="about" />
-      <SectionDivider variant="image" imageSrc="/assets/images/line-2.svg" imageClassName="divider divider-6" />
+      <SectionDivider variant="image" imageSrc={getAssetPath('/assets/images/line-2.svg')} imageClassName="divider divider-6" />
       <TeamSection />
 
       {/* Contact Section */}
@@ -289,7 +290,7 @@ export function Home2() {
           <div className="row justify-content-center">
             <div className="col-12 text-center mt-8">
               <img
-                src="/assets/images/-----1.png"
+                src={getAssetPath('/assets/images/-----1.png')}
                 alt="Decorative"
                 className="decoration-graph"
                 style={{ display: "inline" }}

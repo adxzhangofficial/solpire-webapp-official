@@ -893,7 +893,7 @@ body.home-body {
 }
 
 [data-theme="dark"] .sp-product-card {
-  background: url('/assets/images/2026/card-bg.png') center / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/card-bg.png") center / cover no-repeat;
 }
 
 .sp-product-card:hover {
@@ -1357,7 +1357,7 @@ body.home-body {
 }
 
 [data-theme="dark"] .sp-product-page--canvas {
-  background: url('/assets/images/2026/bg001.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/bg001.png") center top / cover no-repeat;
 }
 
 /* ── Per-project dark backgrounds (separate classes for easy per-project customization) ── */
@@ -1370,7 +1370,7 @@ body.home-body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('/assets/images/2026/geo-bg.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--geooptix-3d > * {
   position: relative;
@@ -1386,7 +1386,7 @@ body.home-body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('/assets/images/2026/geo-bg.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--ai-3dgs-fitness > * {
   position: relative;
@@ -1402,7 +1402,7 @@ body.home-body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('/assets/images/2026/digital-human.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/digital-human.png") center top / cover no-repeat;
   opacity: 0.35;
 }
 [data-theme="dark"] .sp-product-page--pv-power-prediction > * {
@@ -1419,7 +1419,7 @@ body.home-body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('/assets/images/2026/black-bg.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/black-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--dormitory-power-monitor > * {
   position: relative;
@@ -1453,7 +1453,7 @@ content: '';
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('/assets/images/2026/circuit-bg.png') center top / cover no-repeat;
+  background: url("/solpire-webapp-official/assets/images/2026/circuit-bg.png") center top / cover no-repeat;
   opacity: 0.35;
 }
 [data-theme="dark"] .sp-product-page--neuplc > * {

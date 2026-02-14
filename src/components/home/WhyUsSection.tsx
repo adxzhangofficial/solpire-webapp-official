@@ -5,6 +5,7 @@
  */
 import { Link } from '@tanstack/react-router'
 import { CardSpotlight } from '../ui/card-spotlight'
+import { getAssetPath } from '../../lib/utils'
 
 /* ── Component ── */
 export function WhyUsSection() {
@@ -33,7 +34,7 @@ export function WhyUsSection() {
             <div className="col-lg-7 col-md-6 col-12 mt-4 mt-md-0">
               <CardSpotlight className="gx-card-c">
                 <div className="gx-card-c__header">
-                  <img src="/assets/images/logo--1--1.png" alt="Solpire Logo" className="logo-icon gx-card-c__logo" />
+                  <img src={getAssetPath('/assets/images/logo--1--1.png')} alt="Solpire Logo" className="logo-icon gx-card-c__logo" />
                   <div>
                     <h3 className="gx-card-c__name">行业核心痛点</h3>
                     <p className="gx-card-c__sub">AI R&D Challenges</p>
@@ -70,7 +71,7 @@ export function WhyUsSection() {
             <div className="col-lg-7 col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-1">
               <CardSpotlight className="gx-card-c">
                 <div className="gx-card-c__header">
-                  <img src="/assets/images/logo--1--1.png" alt="Solpire Logo" className="logo-icon gx-card-c__logo" />
+                  <img src={getAssetPath('/assets/images/logo--1--1.png')} alt="Solpire Logo" className="logo-icon gx-card-c__logo" />
                   <div>
                     <h3 className="gx-card-c__name">我们的解决方案</h3>
                     <p className="gx-card-c__sub">Solpire AI Solutions</p>

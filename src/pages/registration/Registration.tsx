@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { useForm, Controller } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-const editIcon = '/assets/images/registration/edit-icon.svg'
+import { getAssetPath } from "../../lib/utils"
+const editIcon = getAssetPath('/assets/images/registration/edit-icon.svg')
 
 const registrationSchema = z.object({
   username: z.string().min(3, "用户名至少需要3个字符").max(50, "用户名不能超过50个字符"),

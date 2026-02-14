@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import { SolpireDevice } from './SolpireDevice'
 import { CardSpotlight } from '../ui/card-spotlight'
+import { getAssetPath } from '../../lib/utils'
 
 /**
  * Showcase sections with background images — restored from original design.
@@ -38,7 +39,7 @@ export function GeoOptixShowcaseA() {
           </div>
           <div className="col-lg-6 col-md-5 col-12 text-center mt-4 mt-md-0">
             <div className="gx-visual-a">
-              <img src="/assets/images/logo--1--1.png" alt="GeoOptix Logo" className="gx-logo-a" />
+              <img src={getAssetPath('/assets/images/logo--1--1.png')} alt="GeoOptix Logo" className="gx-logo-a" />
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@ export function GeoOptixShowcaseB() {
             <div className="gx-center-wrap">
               <div className="gx-title-row">
                 <h1 className="gx-hero-title">GeoOptix</h1>
-                <img src="/assets/images/logo--1--1.png" alt="GeoOptix Logo" className="gx-hero-logo" />
+                <img src={getAssetPath('/assets/images/logo--1--1.png')} alt="GeoOptix Logo" className="gx-hero-logo" />
               </div>
               <h2 className="gx-hero-subtitle">AI零件智研软件</h2>
               <p className="gx-hero-tagline">加速推动三维数字化资产管理与智能制造转型</p>
@@ -107,7 +108,7 @@ export function GeoOptixShowcaseC() {
           <div className="col-lg-7 col-md-6 col-12 mt-4 mt-md-0">
             <CardSpotlight className="gx-card-c">
               <div className="gx-card-c__header">
-                <img src="/assets/images/logo--1--1.png" alt="GeoOptix Logo" className="logo-icon gx-card-c__logo" />
+                <img src={getAssetPath('/assets/images/logo--1--1.png')} alt="GeoOptix Logo" className="logo-icon gx-card-c__logo" />
                 <div>
                   <h3 className="gx-card-c__name">GeoOptix</h3>
                   <p className="gx-card-c__sub">AI零件智研软件</p>
@@ -148,17 +149,17 @@ export function MachineShowcase() {
         {/* Background Images */}
         <div className="sol-bg-images">
           <img
-            src="/assets/images/index-pg/img1.png"
+            src={getAssetPath('/assets/images/index-pg/img1.png')}
             alt="Background 1"
             className="sol-bg-img-1"
           />
           <img
-            src="/assets/images/index-pg/img2.png"
+            src={getAssetPath('/assets/images/index-pg/img2.png')}
             alt="Background 2"
             className="sol-bg-img-2"
           />
           <img
-            src="/assets/images/index-pg/img3.png"
+            src={getAssetPath('/assets/images/index-pg/img3.png')}
             alt="Background 3"
             className="sol-bg-img-3"
           />
@@ -173,7 +174,7 @@ export function MachineShowcase() {
                 <div className="sol-main-image-section">
                   <div className="sol-main-image-wrapper">
                     <img
-                      src="/assets/images/index-pg/main-gear.png"
+                      src={getAssetPath('/assets/images/index-pg/main-gear.png')}
                       alt="Main Gear"
                       className="sol-main-gear-image"
                     />
@@ -185,7 +186,7 @@ export function MachineShowcase() {
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((num) => (
                       <div key={num} className="sol-grid-item">
                         <img
-                          src={`/assets/images/index-pg/machine-${num}.png`}
+                          src={getAssetPath(`/assets/images/index-pg/machine-${num}.png`)}
                           alt={`Machine ${num}`}
                           className="sol-grid-image"
                         />

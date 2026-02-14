@@ -1,3 +1,5 @@
+import { getAssetPath } from '../../lib/utils'
+
 interface PainPoint {
   heading: string
   description: string
@@ -26,7 +28,7 @@ const defaultItems: PainPoint[] = [
 
 export function PainPoints({
   items = defaultItems,
-  dividerImage = "/assets/images/line-3.svg",
+  dividerImage = getAssetPath('/assets/images/line-3.svg'),
   showDivider = true
 }: PainPointsProps) {
   return (

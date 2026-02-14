@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { useCalendarModalStore } from '../../stores/calendarModalStore'
+import { getAssetPath } from '../../lib/utils'
 
 export function ContactCTA() {
   const openCalendar = useCalendarModalStore((s) => s.open)
@@ -34,7 +35,7 @@ export function ContactCTA() {
               </button>
             </div>
             <div className="sp-contact-cta__qr">
-              <img src="/assets/images/2026/wechat-bg-transparent.png" alt="WeChat QR Code" />
+              <img src={getAssetPath('/assets/images/2026/wechat-bg-transparent.png')} alt="WeChat QR Code" />
             </div>
             <div className="sp-contact-cta__info">
               <div className="sp-contact-cta__item">

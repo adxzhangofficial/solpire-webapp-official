@@ -1,5 +1,6 @@
 import { useThemeStore } from '../../stores/themeStore'
 import { Link } from '@tanstack/react-router'
+import { getAssetPath } from '../../lib/utils'
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useThemeStore()
@@ -15,7 +16,7 @@ export const Navbar = () => {
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <img
-            src="/assets/images/---2.png"
+            src={getAssetPath('/assets/images/---2.png')}
             alt="Logo Icon"
             className="logo-icon"
           />

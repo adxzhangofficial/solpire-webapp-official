@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { getAssetPath } from "../../lib/utils"
 
 export function UserInfoInterface() {
       useEffect(() => {
@@ -82,7 +83,7 @@ export function UserInfoInterface() {
               <div className="sol-card d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-start align-items-md-center">
                 <div className="sol-left d-flex align-items-center">
                   <div className="sol-logo-wrapper flex-shrink-0">
-                    <img src="/assets/images/logo(2).png" alt="GeoOptix Logo" />
+                    <img src={getAssetPath('/assets/images/logo(2).png')} alt="GeoOptix Logo" />
                   </div>
                   <div>
                     <div>
@@ -114,7 +115,7 @@ export function UserInfoInterface() {
               <div className="sol-card d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-start align-items-md-center">
                 <div className="sol-left d-flex align-items-center">
                   <div className="sol-logo-wrapper flex-shrink-0">
-                    <img src="/assets/images/logo(2).png" alt="GeoOptix Logo" />
+                    <img src={getAssetPath('/assets/images/logo(2).png')} alt="GeoOptix Logo" />
                   </div>
                   <div>
                     <div>

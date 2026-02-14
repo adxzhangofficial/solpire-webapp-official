@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { getAssetPath } from "../../lib/utils"
 
 export function DuplicateChecker2() {
 
@@ -46,7 +47,7 @@ export function DuplicateChecker2() {
     <section className="file-list-section">
       <div className="geoptix-brand pos-element">
         <img
-          src="/assets/images/small_img_logo.png"
+          src={getAssetPath('/assets/images/small_img_logo.png')}
           alt="GeoOptix"
           className="geoptix-logo"
         />
@@ -92,7 +93,7 @@ export function DuplicateChecker2() {
   {/* Footer Image Section */}
   <section className="footer-image-section">
     <div className="footer-image-container">
-      <img src="/assets/images/ft_img.png" alt="Footer" className="footer-img" />
+      <img src={getAssetPath('/assets/images/ft_img.png')} alt="Footer" className="footer-img" />
     </div>
   </section>
 </>

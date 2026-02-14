@@ -1,5 +1,6 @@
 
 import { Link } from '@tanstack/react-router'
+import { getAssetPath } from '../../lib/utils'
 
 export const Footer = () => (
   <>
@@ -9,7 +10,7 @@ export const Footer = () => (
         <div className="footer-content">
           <div className="footer-section footer-brand">
             <Link to="/" className="footer-logo" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src="/assets/images/---2.png" alt="Solpire Logo" className="footer-logo-icon" />
+              <img src={getAssetPath('/assets/images/---2.png')} alt="Solpire Logo" className="footer-logo-icon" />
               <span className="footer-company-name">S O L P I R E</span>
             </Link>
             <p className="footer-brand-desc">
@@ -89,7 +90,7 @@ export const Footer = () => (
           <div className="qr-block">
             <div className="qr-row">
               <div className="qr">
-                <img src="/assets/images/2026/wechat-bg-transparent.png" alt="WeChat QR Code" />
+                <img src={getAssetPath('/assets/images/2026/wechat-bg-transparent.png')} alt="WeChat QR Code" />
               </div>
               <div className="qr-details">
                 <p>微信：rayaesthe</p>
@@ -98,16 +99,16 @@ export const Footer = () => (
               </div>
               <div className="social-media" aria-label="social links">
                 <a href="#" aria-label="WeChat">
-                  <img src="/assets/images/wechat.png" alt="WeChat Icon" />
+                  <img src={getAssetPath('/assets/images/wechat.png')} alt="WeChat Icon" />
                 </a>
                 <a href="#" aria-label="Weibo">
-                  <img src="/assets/images/weibo.png" alt="Weibo Icon" />
+                  <img src={getAssetPath('/assets/images/weibo.png')} alt="Weibo Icon" />
                 </a>
                 <a href="#" aria-label="LinkedIn">
-                  <img src="/assets/images/linkedin.png" alt="LinkedIn Icon" />
+                  <img src={getAssetPath('/assets/images/linkedin.png')} alt="LinkedIn Icon" />
                 </a>
                 <a href="#" aria-label="Facebook">
-                  <img src="/assets/images/facebook.png" alt="Facebook Icon" />
+                  <img src={getAssetPath('/assets/images/facebook.png')} alt="Facebook Icon" />
                 </a>
               </div>
             </div>

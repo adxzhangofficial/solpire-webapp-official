@@ -1,3 +1,5 @@
+import { getAssetPath } from '../../lib/utils'
+
 interface SectionDividerProps {
   variant?: 'geooptix' | 'image'
   imageSrc?: string
@@ -6,7 +8,7 @@ interface SectionDividerProps {
 
 export function SectionDivider({ 
   variant = 'geooptix',
-  imageSrc = "/assets/images/line-2.svg",
+  imageSrc = getAssetPath('/assets/images/line-2.svg'),
   imageClassName = "divider divider-6"
 }: SectionDividerProps) {
   if (variant === 'image') {

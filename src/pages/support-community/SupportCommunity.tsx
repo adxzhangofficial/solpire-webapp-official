@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { getAssetPath } from "../../lib/utils"
 
 export function SupportCommunity() {
        useEffect(() => {
@@ -70,7 +71,7 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
@@ -80,7 +81,7 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
@@ -90,7 +91,7 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
@@ -100,7 +101,7 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
@@ -110,7 +111,7 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
@@ -120,14 +121,14 @@ export function SupportCommunity() {
         <span className="post-author">By : Rayaesthe</span>
         <span className="post-date">2025.6.23</span>
         <button className="edit-icon-btn">
-          <img src="/assets/images/registration/edit-icon.svg" alt="Edit" />
+          <img src={getAssetPath('/assets/images/registration/edit-icon.svg')} alt="Edit" />
         </button>
       </div>
     </div>
   </div>
   <div className="background-image-section">
     <div className="background-image-wrapper">
-      <img src="/assets/images/主页首页背景_1.png" alt="Background" />
+      <img src={getAssetPath('/assets/images/主页首页背景_1.png')} alt="Background" />
     </div>
   </div>
   <div className="form-divider" />
@@ -182,7 +183,7 @@ export function SupportCommunity() {
         />
       </div>
       <button className="send-icon-btn">
-        <img src="/assets/images/send-icon.svg" alt="Send" />
+        <img src={getAssetPath('/assets/images/send-icon.svg')} alt="Send" />
       </button>
     </div>
   </div>

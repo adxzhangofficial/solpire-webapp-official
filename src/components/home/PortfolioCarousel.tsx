@@ -3,6 +3,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { getAssetPath } from '../../lib/utils'
 
 interface PortfolioSlide {
   type: 'card' | 'image'
@@ -16,14 +17,14 @@ interface PortfolioCarouselProps {
 }
 
 const defaultSlides: PortfolioSlide[] = [
-  { type: 'card', imageSrc: '/assets/images/image-4.png', alt: 'Project 1' },
-  { type: 'image', imageSrc: '/assets/images/------------.svg', alt: 'Card Image' },
-  { type: 'card', imageSrc: '/assets/images/image-4.png', alt: 'Project 1' },
-  { type: 'image', imageSrc: '/assets/images/------------.svg', alt: 'Card Image' },
-  { type: 'card', imageSrc: '/assets/images/image-4.png', alt: 'Project 1' },
-  { type: 'image', imageSrc: '/assets/images/------------.svg', alt: 'Card Image' },
-  { type: 'card', imageSrc: '/assets/images/image-4.png', alt: 'Project 1' },
-  { type: 'image', imageSrc: '/assets/images/------------.svg', alt: 'Card Image' },
+  { type: 'card', imageSrc: getAssetPath('/assets/images/image-4.png'), alt: 'Project 1' },
+  { type: 'image', imageSrc: getAssetPath('/assets/images/------------.svg'), alt: 'Card Image' },
+  { type: 'card', imageSrc: getAssetPath('/assets/images/image-4.png'), alt: 'Project 1' },
+  { type: 'image', imageSrc: getAssetPath('/assets/images/------------.svg'), alt: 'Card Image' },
+  { type: 'card', imageSrc: getAssetPath('/assets/images/image-4.png'), alt: 'Project 1' },
+  { type: 'image', imageSrc: getAssetPath('/assets/images/------------.svg'), alt: 'Card Image' },
+  { type: 'card', imageSrc: getAssetPath('/assets/images/image-4.png'), alt: 'Project 1' },
+  { type: 'image', imageSrc: getAssetPath('/assets/images/------------.svg'), alt: 'Card Image' },
 ]
 
 export function PortfolioCarousel({ slides = defaultSlides }: PortfolioCarouselProps) {

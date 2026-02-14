@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { getAssetPath } from "../../lib/utils"
 
 
 export function Cooperation() {
@@ -110,13 +111,13 @@ export function Cooperation() {
     </p>
     <div className="image-container">
       <img
-        src="/assets/images/截屏2025-06-19 16.45.41.png.png"
+        src={getAssetPath('/assets/images/截屏2025-06-19 16.45.41.png.png')}
         alt="合作流程图示"
       />
     </div>
     <div className="image-container">
       <img
-        src="/assets/images/截屏2025-06-19 16.51.03.png.png"
+        src={getAssetPath('/assets/images/截屏2025-06-19 16.51.03.png.png')}
         alt="数据安全承诺"
       />
       <p className="image-caption">

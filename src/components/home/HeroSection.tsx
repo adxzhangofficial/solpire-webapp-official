@@ -1,9 +1,11 @@
+import { getAssetPath } from '../../lib/utils'
+
 export function HeroSection() {
   return (
     <section className="sp-hero">
       <div className="sp-hero__bg">
         <img
-          src="/assets/images/-------1.png"
+          src={getAssetPath('/assets/images/-------1.png')}
           alt=""
           className="sp-hero__bg-image"
         />

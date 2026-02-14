@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from '@tanstack/react-router'
 import { caseStudies, categories } from '../../data/caseStudies'
-const caseStudyCover = '/assets/images/2026/case-study.png'
+import { getAssetPath } from '../../lib/utils'
+const caseStudyCover = getAssetPath('/assets/images/2026/case-study.png')
 import './CaseStudies.css'
 
 export default function CaseStudies() {

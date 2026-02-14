@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react"
+import { getAssetPath } from "../../lib/utils"
 
 const INTRO_KEY = "sp-intro-seen"
 
@@ -44,7 +45,7 @@ export const LoadingSpinner = () => {
         <div className="loading-spinner-container">
           <div className="spinner-circle" />
           <img
-            src="/assets/images/2026/loading-spinner-inner.png"
+            src={getAssetPath('/assets/images/2026/loading-spinner-inner.png')}
             alt="Solpire"
             className="spinner-logo"
           />
@@ -80,7 +81,7 @@ export const LoadingSpinner = () => {
         {/* Logo */}
         <div className="sp-intro__logo-wrap">
           <img
-            src="/assets/images/2026/new-bg.png"
+            src={getAssetPath('/assets/images/2026/new-bg.png')}
             alt="Solpire"
             className="sp-intro__logo"
           />

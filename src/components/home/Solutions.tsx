@@ -1,3 +1,5 @@
+import { getAssetPath } from '../../lib/utils'
+
 interface Solution {
   heading: string
   description: string
@@ -27,7 +29,7 @@ const defaultItems: Solution[] = [
 
 export function Solutions({
   items = defaultItems,
-  dividerImage = "/assets/images/line-3.svg",
+  dividerImage = getAssetPath('/assets/images/line-3.svg'),
   showDivider = true,
   id = "products"
 }: SolutionsProps) {

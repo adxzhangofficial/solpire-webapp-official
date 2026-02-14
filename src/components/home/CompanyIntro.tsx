@@ -1,8 +1,9 @@
 import { useThemeStore } from '../../stores/themeStore'
+import { getAssetPath } from '../../lib/utils'
 
-const logoLight = '/assets/images/2026/solpire-white-theme.jpg'
-const logoDark = '/assets/images/2026/solpire-dark-theme.jpg'
-const buildingImg = '/assets/images/2026/building.png'
+const logoLight = getAssetPath('/assets/images/2026/solpire-white-theme.jpg')
+const logoDark = getAssetPath('/assets/images/2026/solpire-dark-theme.jpg')
+const buildingImg = getAssetPath('/assets/images/2026/building.png')
 
 interface CompanyIntroProps {
   id?: string
@@ -10,22 +11,22 @@ interface CompanyIntroProps {
 
 const capabilities = [
   {
-    icon: '/assets/images/2026/icons8-globe-80.png',
+    icon: getAssetPath('/assets/images/2026/icons8-globe-80.png'),
     title: '多模态大模型',
     desc: 'LLMs、VLMs、多模态融合'
   },
   {
-    icon: '/assets/images/2026/icons8-3d-80.png',
+    icon: getAssetPath('/assets/images/2026/icons8-3d-80.png'),
     title: '高精度3D感知',
     desc: '三维建模与数字资产管理'
   },
   {
-    icon: '/assets/images/2026/icons8-vision-80.png',
+    icon: getAssetPath('/assets/images/2026/icons8-vision-80.png'),
     title: '机器视觉',
     desc: '工业缺陷检测与视觉AI'
   },
   {
-    icon: '/assets/images/2026/icons8-analysis-80.png',
+    icon: getAssetPath('/assets/images/2026/icons8-analysis-80.png'),
     title: '数据预测分析',
     desc: '机器学习驱动决策优化'
   },
