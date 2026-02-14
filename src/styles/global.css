@@ -5168,7 +5168,7 @@ li.day.AlreadyOccupied {
 }
 
 .file-list-container::before {
-    content: ";
+    content: "";
     position: absolute;
     inset: 0;
     /* top:0; right:0; bottom:0; left:0 */
@@ -5439,7 +5439,7 @@ li.day.AlreadyOccupied {
 }
 
 .features-table thead::after {
-    content: ";
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -5501,7 +5501,7 @@ li.day.AlreadyOccupied {
 }
 
 .features-table th:not(:last-child)::after {
-    content: ";
+    content: "";
     position: absolute;
     top: 0;
     right: -0.4px;
@@ -5517,7 +5517,7 @@ li.day.AlreadyOccupied {
 }
 
 .features-table tr:last-child td:not(:last-child)::after {
-    content: ";
+    content: "";
     position: absolute;
     top: 0;
     right: -0.4px;
@@ -6418,7 +6418,7 @@ body.contactus-body {
 }
 
 body.contactus-body::before {
-    content: ";
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -6814,7 +6814,7 @@ body.cooperation-body {
 }
 
 .content-list li:before {
-    content: ";
+    content: "";
     position: absolute;
     left: 0;
     top: 12px;
@@ -6938,7 +6938,7 @@ body.signin-body {
 }
 
 body.signin-body::before {
-    content: ";
+    content: "";
     position: fixed;
     left: 0;
     top: 0;
@@ -7044,7 +7044,7 @@ body.forgetpassword-body {
 }
 
 body.forgetpassword-body::before {
-    content: ";
+    content: "";
     position: fixed;
     left: 0;
     top: 0;
@@ -7337,7 +7337,7 @@ body.forgetpassword-body::before {
 }
 
 .custom-checkbox .checkmark::after {
-    content: ";
+    content: "";
     position: absolute;
     display: none;
     left: 6px;
@@ -7914,7 +7914,7 @@ body.requestotp-body {
 }
 
 body.requestotp-body::before {
-    content: ";
+    content: "";
     position: fixed;
     left: 0;
     top: 0;
@@ -7970,7 +7970,7 @@ body.searchresults-body {
 }
 
 body.searchresults-body::before {
-    content: ";
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -8318,7 +8318,7 @@ body.communitysupport-body {
 }
 
 .post-row::before {
-    content: ";
+    content: "";
     position: absolute;
     /* left: 53px; */
     width: 85px;
@@ -8639,9 +8639,9 @@ body.technicalsupport-body {
 }
 
 /* body.technicalsupport-body::before {
-                content: ";
+                content: "";
                 background-image: url("/solpire-webapp-official/assets/images/背景.png");
-                content: ";
+                content: "";
                 position: absolute;
                 bottom: -19%;
                 width: 100%;
@@ -8789,7 +8789,7 @@ body.privacy-policy-body {
 }
 
 body.privacy-policy-body::before {
-    content: ";
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -9011,7 +9011,7 @@ body.terms-body {
 }
 
 body.terms-body::before {
-    content: ";
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -9382,7 +9382,7 @@ body.user-info-interface-body {
 
 /* Background “shadow” image */
 .sol-logo-wrapper::before {
-    content: ";
+    content: "";
     position: absolute;
     transform: scale(1.3);
     inset: 0;
@@ -9668,7 +9668,7 @@ Home2 Page CSS
 }
 
 .sol-box-modal::before {
-    content: ";
+    content: "";
     position: absolute;
     top: -148px;
     left: 0;
@@ -9693,7 +9693,7 @@ Home2 Page CSS
 }
 
 .three-d-text-section::before {
-    content: ";
+    content: "";
     position: absolute;
     top: -148px;
     left: 0;
@@ -9788,7 +9788,7 @@ Home2 Page CSS
 }
 
 .slph-hero::before {
-content: ";
+content: "";
     position: absolute;
     top: 0px;
     left: 0;
@@ -10495,7 +10495,7 @@ width: 100%;
 }
 
 .learn-hero::before {
-    content: ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -10615,7 +10615,7 @@ width: 100%;
 }
 
 .specs-section::before {
-    content: ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -10748,7 +10748,7 @@ width: 100%;
 }
 
 .use-case-card::before {
-    content: ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -10787,7 +10787,7 @@ width: 100%;
 }
 
 .use-case-image::after {
-    content: ";
+    content: "";
     position: absolute;
     top: -50%;
     right: -50%;
@@ -10821,7 +10821,7 @@ width: 100%;
 }
 
 .use-case-card h4::after {
-    content: ";
+    content: "";
     position: absolute;
     bottom: -6px;
     left: 0;
