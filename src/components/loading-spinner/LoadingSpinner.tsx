@@ -1,28 +1,25 @@
 import { useEffect, useState, useRef } from "react"
 import { getAssetPath } from "../../lib/utils"
 
-const INTRO_KEY = "sp-intro-seen"
-
 export const LoadingSpinner = () => {
   const [phase, setPhase] = useState<"loading" | "intro" | "done">("loading")
   const isHomePage = useRef(
-    window.location.pathname === "/" || window.location.pathname === ""
-  )
-  const isFirstVisit = useRef(
-    isHomePage.current && !sessionStorage.getItem(INTRO_KEY)
+    window.location.pathname === "/" || 
+    window.location.pathname === "" ||
+    window.location.pathname.endsWith("/solpire-webapp-official/") ||
+    window.location.pathname === "/solpire-webapp-official"
   )
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onReady = () => {
-      if (isFirstVisit.current) {
-        // First homepage load in this tab: show cinematic intro
-        sessionStorage.setItem(INTRO_KEY, "1")
+      if (isHomePage.current) {
+        // Homepage visit: always show cinematic intro
         setPhase("intro")
         // Auto-dismiss after animation completes (~4.8s)
         setTimeout(() => setPhase("done"), 4800)
       } else {
-        // Returning visit: quick fade
+        // Other pages: quick fade
         setTimeout(() => setPhase("done"), 400)
       }
     }
@@ -37,8 +34,8 @@ export const LoadingSpinner = () => {
 
   if (phase === "done") return null
 
-  /* ── Returning-visitor spinner ── */
-  if (!isFirstVisit.current) {
+  /* ── Non-homepage spinner ── */
+  if (!isHomePage.current) {
     return (
       <div className="loading-spinner">
         <div className="loading-spinner-backdrop" />
@@ -54,7 +51,7 @@ export const LoadingSpinner = () => {
     )
   }
  
-  /* ── First-visit cinematic intro ── */
+  /* ── Homepage cinematic intro (always shown) ── */
   return (
     <div
       ref={containerRef}
