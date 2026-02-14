@@ -1,0 +1,515 @@
+/* ================================================================
+   SOLPIRE DEVICE — Isolated styles (from solpire-product.html)
+   All classes prefixed with .solpire-dev- to avoid any CSS leaks.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.solpire-dev-reset,
+.solpire-dev-reset *,
+.solpire-dev-reset *::before,
+.solpire-dev-reset *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.solpire-dev-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Outermost shadow layer */
+.solpire-dev-shadow {
+  position: relative;
+  border-radius: 34px;
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.20),
+    0 12px 30px rgba(0,0,0,0.12),
+    0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Layer 1: bottom bevel - the very outside edge */
+.solpire-dev-layer1 {
+  position: relative;
+  width: 318px;
+  height: 510px;
+  border-radius: 34px;
+  background: linear-gradient(90deg, #9b9b9b 0%, #b8b8b8 8%, #d5d5d5 25%, #e8e8e8 50%, #f0f0f0 75%, #fafafa 100%);
+  padding: 3px;
+  padding-left: 4px;
+}
+
+/* Layer 2: secondary edge ring - bright highlight */
+.solpire-dev-layer2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 31px;
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 15%, #fafafa 40%, #fafafa 60%, #f0f0f0 85%, #e0e0e0 100%);
+  padding: 2px;
+  position: relative;
+}
+
+/* Layer 3: inner edge before the face */
+.solpire-dev-layer3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 29px;
+  background: linear-gradient(180deg, #d8d8d8 0%, #d0d0d0 30%, #c8c8c8 60%, #c0c0c0 100%);
+  padding: 2px;
+}
+
+/* Device front face */
+.solpire-dev-device {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #e6e6e6 0%, #e5e5e5 25%, #e4e4e4 50%, #e3e3e3 70%, #e2e2e2 85%, #e1e1e1 100%);
+  border-radius: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 18px 28px 26px 28px;
+}
+
+/* Side button on right edge */
+.solpire-dev-side-btn {
+  position: absolute;
+  right: -3px;
+  top: 24%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 78px;
+  background: linear-gradient(90deg, #e0e0e0, #d5d5d5, #ccc);
+  border-radius: 0 2px 2px 0;
+  box-shadow: 1px 0 2px rgba(0,0,0,0.06);
+  z-index: 10;
+}
+
+/* Camera lens */
+.solpire-dev-camera {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 35%, #4a4a5a 0%, #2a2a3a 35%, #151520 65%, #0a0a12 100%);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  box-shadow:
+    0 0 0 2.5px #e0e0e0,
+    0 0 0 3.5px #d0d0d0,
+    0 1px 4px rgba(0,0,0,0.18);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.solpire-dev-camera::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 4px;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.3), transparent);
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+}
+
+.solpire-dev-camera::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 1px solid rgba(80,80,100,0.25);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Screen outer bezel - 3D gray/silver metallic frame */
+.solpire-dev-screen-bezel {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(330deg, #d5d5d5 0%, #c0c0c0 20%, #b0b0b0 50%, #a0a0a0 80%, #959595 100%);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow:
+    0 3px 12px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.4),
+    inset -1px -1px 0 rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+/* Screen thick black border */
+.solpire-dev-screen-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  border-radius: 11px;
+  padding: 10px;
+  position: relative;
+  box-shadow:
+    inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Glass reflection on top-left of black bezel */
+.solpire-dev-screen-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 55%;
+  height: 40%;
+  background: linear-gradient(150deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.03) 40%, transparent 70%);
+  border-radius: 10px 10px 50% 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.solpire-dev-screen {
+  width: 100%;
+  height: 100%;
+  background: #ebebeb;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ========== CLOCK TICK MARKS ========== */
+.solpire-dev-clock-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.solpire-dev-tick-major {
+  stroke-linecap: round;
+}
+
+.solpire-dev-tick-minor {
+  stroke-linecap: round;
+}
+
+/* Screen content */
+.solpire-dev-screen-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-top: -6px;
+}
+
+.solpire-dev-am-label {
+  font-size: 11px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  margin-bottom: 1px;
+}
+
+.solpire-dev-time {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+
+.solpire-dev-ai-ready {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+}
+
+/* Small pill indicator at bottom of screen */
+.solpire-dev-screen-pill {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: #aaa;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* ========== CONTROLS SECTION ========== */
+.solpire-dev-controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+  flex-shrink: 0;
+}
+
+/* Rotary knob */
+.solpire-dev-knob-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.solpire-dev-knob {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #c8c8c8 0deg, #e8e8e8 15deg, #b0b0b0 30deg,
+    #dcdcdc 50deg, #c0c0c0 70deg, #eee 90deg,
+    #b8b8b8 110deg, #e0e0e0 130deg, #c4c4c4 150deg,
+    #f0f0f0 170deg, #b4b4b4 190deg, #ddd 210deg,
+    #c0c0c0 230deg, #e8e8e8 250deg, #bbb 270deg,
+    #e4e4e4 290deg, #c8c8c8 310deg, #ebebeb 330deg,
+    #bcbcbc 350deg, #c8c8c8 360deg
+  );
+  box-shadow:
+    0 3px 8px rgba(0,0,0,0.18),
+    0 1px 3px rgba(0,0,0,0.10),
+    inset 0 1px 1px rgba(255,255,255,0.5);
+  position: relative;
+}
+
+.solpire-dev-knob::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  background: conic-gradient(
+    from 20deg,
+    #d0d0d0 0deg, #f2f2f2 20deg, #bbb 40deg,
+    #e5e5e5 60deg, #ccc 80deg, #f0f0f0 100deg,
+    #b8b8b8 120deg, #e2e2e2 140deg, #c8c8c8 160deg,
+    #eee 180deg, #bbb 200deg, #e0e0e0 220deg,
+    #c5c5c5 240deg, #f2f2f2 260deg, #bfbfbf 280deg,
+    #e8e8e8 300deg, #ccc 320deg, #ebebeb 340deg,
+    #d0d0d0 360deg
+  );
+}
+
+.solpire-dev-knob::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 42% 38%, #e0e0e0, #a8a8a8);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+  z-index: 1;
+}
+
+/* Button containers */
+.solpire-dev-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* AI Talk button - concave/inset bowl look */
+.solpire-dev-ai-talk-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f0f0f0 0%, #e8e8e8 40%, #f2f2f2 100%);
+  border: none;
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.06),
+    0 0 0 2px #fff,
+    0 0 0 3px rgba(0,0,0,0.04),
+    inset 0 3px 6px rgba(0,0,0,0.10),
+    inset 0 1px 2px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* White raised outer rim */
+.solpire-dev-ai-talk-btn::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 19px;
+  background: linear-gradient(180deg, #fff 0%, #f0f0f0 100%);
+  z-index: -1;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.08),
+    0 4px 12px rgba(0,0,0,0.04);
+}
+
+.solpire-dev-mic-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #555;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.solpire-dev-mic-rect {
+  fill: none;
+  stroke: #555;
+  stroke-width: 1.8;
+}
+
+.solpire-dev-mic-arc {
+  fill: none;
+  stroke: #555;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.solpire-dev-mic-stem {
+  stroke: #555;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.solpire-dev-mic-base {
+  stroke: #555;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.solpire-dev-btn-label {
+  font-size: 10px;
+  color: #555;
+  margin-top: 7px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Emergency button - deep recessed well with raised dome */
+.solpire-dev-emergency-outer {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #e8e8e8 0%, #d8d8d8 40%, #eee 100%);
+  box-shadow:
+    0 2px 5px rgba(0,0,0,0.06),
+    0 0 0 2px #fff,
+    0 0 0 3px rgba(0,0,0,0.04),
+    inset 0 4px 8px rgba(0,0,0,0.12),
+    inset 0 2px 3px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+
+/* White raised outer rim for emergency */
+.solpire-dev-emergency-outer::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff 0%, #f0f0f0 100%);
+  z-index: -1;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.08),
+    0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* Silver/metallic ring around red button */
+.solpire-dev-emergency-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #d8d8d8 0%, #aaa 30%, #c0c0c0 60%, #999 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.4),
+    inset 0 -1px 2px rgba(0,0,0,0.1);
+}
+
+/* Red dome button with concentric ridges */
+.solpire-dev-emergency-btn-inner {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 46% 40%, #e84545 0%, #d73030 35%, #c42525 65%, #b01c1c 100%);
+  box-shadow:
+    0 2px 5px rgba(160,15,15,0.35),
+    inset 0 2px 4px rgba(255,120,120,0.3),
+    inset 0 -2px 5px rgba(80,0,0,0.25);
+  position: relative;
+}
+
+/* Outer concentric ring on red button */
+.solpire-dev-emergency-btn-inner::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(180,30,30,0.5);
+  box-shadow:
+    inset 0 1px 2px rgba(255,100,100,0.2),
+    0 1px 1px rgba(80,0,0,0.15);
+}
+
+/* Inner concentric circle on red button */
+.solpire-dev-emergency-btn-inner::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 46% 42%, #e04040 0%, #cc2a2a 50%, #b82222 100%);
+  box-shadow:
+    inset 0 1px 3px rgba(255,130,130,0.25),
+    inset 0 -1px 3px rgba(80,0,0,0.2);
+}
+
+/* Branding */
+.solpire-dev-branding {
+  margin-top: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.solpire-dev-brand-en {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3a3a3a;
+  letter-spacing: 1px;
+}
+
+.solpire-dev-brand-cn {
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 2px;
+}

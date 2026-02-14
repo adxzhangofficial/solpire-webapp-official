@@ -1,0 +1,128 @@
+/* ============================================================
+   CALENDAR MODAL
+   ============================================================ */
+
+.sp-cal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: sp-cal-modal-in 0.3s ease forwards;
+}
+
+/* Ensure SweetAlert appears above the modal */
+.swal2-container {
+  z-index: 10100 !important;
+}
+
+@keyframes sp-cal-modal-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.sp-cal-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.sp-cal-modal__container {
+  position: relative;
+  z-index: 1;
+  width: 95%;
+  max-width: 820px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: sp-cal-modal-slide 0.35s cubic-bezier(.22, .61, .36, 1) forwards;
+}
+
+@keyframes sp-cal-modal-slide {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Close button */
+.sp-cal-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--sp-bg-section, rgba(255,255,255,0.06));
+  border: 1px solid var(--sp-border, rgba(255,255,255,0.1));
+  color: var(--sp-text-muted, #999);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sp-cal-modal__close:hover {
+  background: var(--sp-bg-card-hover, rgba(255,255,255,0.1));
+  color: var(--sp-text-heading, #fff);
+  transform: rotate(90deg);
+}
+
+/* Override calendar section styles when inside modal */
+.sp-cal-modal .sp-calendar {
+  padding: 2.5rem 0 2rem;
+  background: var(--sp-bg-card, #1a1a2e);
+  border: 1px solid var(--sp-border, rgba(255,255,255,0.08));
+  border-radius: 20px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+.sp-cal-modal .sp-calendar::before {
+  display: none;
+}
+
+.sp-cal-modal .sp-calendar__header {
+  margin-bottom: 2rem;
+}
+
+/* Scrollbar styling for modal */
+.sp-cal-modal__container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sp-cal-modal__container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sp-cal-modal__container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .sp-cal-modal__container {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .sp-cal-modal .sp-calendar {
+    border-radius: 0;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  .sp-cal-modal__close {
+    top: 12px;
+    right: 12px;
+  }
+}

@@ -1,0 +1,103 @@
+/* ============================================================
+   PRODUCTS – LISTING PAGE
+   ============================================================ */
+
+.sp-products-page {
+  min-height: 100vh;
+}
+
+/* Hero -------------------------------------------------------- */
+.sp-products-page__hero {
+  padding: 120px 0 60px;
+  position: relative;
+}
+
+.sp-products-page__hero .sp-section__label {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sp-products-page__hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sp-border), transparent);
+}
+
+.sp-products-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: var(--sp-transition);
+}
+
+.sp-products-page__back:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.sp-products-page__title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.sp-products-page__subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Light theme overrides for hero */
+:root:not([data-theme="dark"]) .sp-products-page__hero .sp-section__label {
+  color: #4b4b4b;
+  background: rgba(75, 75, 75, 0.08);
+  border-color: rgba(75, 75, 75, 0.2);
+}
+
+:root:not([data-theme="dark"]) .sp-products-page__back {
+  color: #4b4b4b !important;
+  border-color: rgba(75, 75, 75, 0.25);
+  background: rgba(75, 75, 75, 0.06);
+}
+
+:root:not([data-theme="dark"]) .sp-products-page__back:hover {
+  color: #333 !important;
+  background: rgba(75, 75, 75, 0.12);
+  border-color: rgba(75, 75, 75, 0.4);
+}
+
+:root:not([data-theme="dark"]) .sp-products-page__title {
+  color: #4b4b4b;
+}
+
+:root:not([data-theme="dark"]) .sp-products-page__subtitle {
+  color: rgba(75, 75, 75, 0.7);
+}
+
+/* Content ----------------------------------------------------- */
+.sp-products-page__content {
+  padding: 60px 0 100px;
+  background: var(--sp-bg);
+}
+
+.sp-product-card--page {
+  min-height: 420px;
+}
