@@ -10374,7 +10374,7 @@ width: 100%;
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: url("/solpire-webapp-official/assets/images/2026/bg-geooptix-cards.png') center / cover no-repeat;
+    background: url("/solpire-webapp-official/assets/images/2026/bg-geooptix-cards.png") center / cover no-repeat;
     opacity: 0.45;
     z-index: 0;
     pointer-events: none;
