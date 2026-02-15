@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const DuplicateChecker2 = lazy(() =>
+const DuplicateChecker2 = lazyWithRetry(() =>
   import("../../pages/duplicate-checker-2/DuplicateChecker2").then((m) => ({ default: m.DuplicateChecker2 }))
 )
 

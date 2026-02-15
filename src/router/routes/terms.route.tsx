@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const Terms = lazy(() =>
+const Terms = lazyWithRetry(() =>
   import("../../pages/terms/Terms").then((m) => ({ default: m.Terms }))
 )
 

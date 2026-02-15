@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const TechnicalSupport = lazy(() =>
+const TechnicalSupport = lazyWithRetry(() =>
   import("../../pages/technical-support/TechnicalSupport").then((m) => ({ default: m.TechnicalSupport }))
 )
 

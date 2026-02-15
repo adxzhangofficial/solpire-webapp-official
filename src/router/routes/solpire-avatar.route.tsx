@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const SolpireAvatar = lazy(() =>
+const SolpireAvatar = lazyWithRetry(() =>
   import("../../pages/solpire-avatar/SolpireAvatar").then((m) => ({ default: m.SolpireAvatar }))
 )
 

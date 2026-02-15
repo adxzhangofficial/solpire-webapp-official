@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const OtpRequest = lazy(() =>
+const OtpRequest = lazyWithRetry(() =>
   import("../../pages/otp-request/OtpRequest").then((m) => ({ default: m.OtpRequest }))
 )
 

@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const CaseStudyDetail = lazy(() => import("../../pages/case-studies/CaseStudyDetail"))
+const CaseStudyDetail = lazyWithRetry(() => import("../../pages/case-studies/CaseStudyDetail"))
 
 export const caseStudyDetailRoute = createRoute({
   getParentRoute: () => rootRoute,

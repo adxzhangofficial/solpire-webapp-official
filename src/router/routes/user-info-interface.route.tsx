@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const UserInfoInterface = lazy(() =>
+const UserInfoInterface = lazyWithRetry(() =>
   import("../../pages/user-info-interface/UserInfoInterface").then((m) => ({ default: m.UserInfoInterface }))
 )
 

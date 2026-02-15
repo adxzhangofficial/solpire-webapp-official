@@ -1,9 +1,10 @@
 import { createRoute } from "@tanstack/react-router";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import { lazyWithRetry } from "../../lib/lazyWithRetry";
 import { rootRoute } from "../root";
 
 // Lazy load the Signin page
-const Signin = lazy(() =>
+const Signin = lazyWithRetry(() =>
   import("../../pages/signin/Signin").then((module) => ({
     default: module.Signin,
   }))

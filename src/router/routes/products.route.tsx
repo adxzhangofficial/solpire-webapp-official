@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const Products = lazy(() => import("../../pages/products/Products"))
+const Products = lazyWithRetry(() => import("../../pages/products/Products"))
 
 export const productsRoute = createRoute({
   getParentRoute: () => rootRoute,

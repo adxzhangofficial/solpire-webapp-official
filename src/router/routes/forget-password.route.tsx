@@ -1,8 +1,9 @@
 import { createRoute } from "@tanstack/react-router"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
+import { lazyWithRetry } from "../../lib/lazyWithRetry"
 import { rootRoute } from "../root"
 
-const ForgetPassword = lazy(() =>
+const ForgetPassword = lazyWithRetry(() =>
   import("../../pages/forget-password/ForgetPassword").then((m) => ({ default: m.ForgetPassword }))
 )
 
