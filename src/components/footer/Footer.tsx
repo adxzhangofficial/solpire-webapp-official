@@ -21,13 +21,16 @@ export const Footer = () => (
             <h4>产品</h4>
             <ul>
               <li>
-                <Link to="/duplicate-checker">GeoOptix 3D 模型查重</Link>
+                <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }}>GeoOptix 3D 模型查重</Link>
               </li>
               <li>
                 <Link to="/solpire-canvas">Solpire Canvas 网页生成</Link>
               </li>
               <li>
                 <Link to="/solpire-avatar">Solpire Avatar 数字人</Link>
+              </li>
+              <li>
+                <Link to="/products">View All</Link>
               </li>
             </ul>
           </div>
