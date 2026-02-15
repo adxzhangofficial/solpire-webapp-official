@@ -12543,3 +12543,148 @@ body.requestotp-body .rg-page-bg {
     color: #333 !important;
     font-weight: 600;
 }
+
+/* ============================================================
+   PRODUCT PAGES — Shared Dark-Theme Backgrounds
+   (Moved here so they load on every page, not just Home)
+   ============================================================ */
+.sp-product-page {
+  color: var(--sp-text);
+  padding-top: 80px;
+}
+
+/* ── Solpire Canvas dark background ── */
+[data-theme="dark"] .sp-product-page--canvas {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--canvas::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/bg001.png") center top / cover no-repeat;
+}
+[data-theme="dark"] .sp-product-page--canvas > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Solpire Avatar dark background ── */
+[data-theme="dark"] .sp-product-page--avatar {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--avatar::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/digital-human.png") center top / cover no-repeat;
+  opacity: 0.35;
+}
+[data-theme="dark"] .sp-product-page--avatar > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Per-project dark backgrounds ── */
+[data-theme="dark"] .sp-product-page--geooptix-3d {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--geooptix-3d::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
+}
+[data-theme="dark"] .sp-product-page--geooptix-3d > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .sp-product-page--ai-3dgs-fitness {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--ai-3dgs-fitness::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
+}
+[data-theme="dark"] .sp-product-page--ai-3dgs-fitness > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .sp-product-page--pv-power-prediction {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--pv-power-prediction::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/digital-human.png") center top / cover no-repeat;
+  opacity: 0.35;
+}
+[data-theme="dark"] .sp-product-page--pv-power-prediction > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .sp-product-page--dormitory-power-monitor {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--dormitory-power-monitor::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/black-bg.png") center top / cover no-repeat;
+}
+[data-theme="dark"] .sp-product-page--dormitory-power-monitor > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .sp-product-page--industrial-aoi {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--industrial-aoi::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/new-bg2.png") center top / cover no-repeat;
+  opacity: 0.35;
+  top: -281px;
+}
+[data-theme="dark"] .sp-product-page--industrial-aoi > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .sp-product-page--neuplc {
+  position: relative;
+}
+[data-theme="dark"] .sp-product-page--neuplc::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("/solpire-webapp-official/assets/images/2026/circuit-bg.png") center top / cover no-repeat;
+  opacity: 0.35;
+}
+[data-theme="dark"] .sp-product-page--neuplc > * {
+  position: relative;
+  z-index: 1;
+}

@@ -83,7 +83,7 @@ export function SolpireAvatar() {
   }, [])
 
   return (
-    <div className="sp-product-page">
+    <div className="sp-product-page sp-product-page--avatar">
       {/* Hero */}
       <section className="sp-product-hero" style={{ '--accent': '#a855f7' } as React.CSSProperties}>
         <div className="container">
