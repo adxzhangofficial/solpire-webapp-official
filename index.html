@@ -22,18 +22,31 @@
 
     <!-- Detect stale-cache chunk 404s and force reload (inline so it works even with old bundles) -->
     <script>
-      window.addEventListener('error', function(e) {
-        var t = e.target;
-        if (t && (t.tagName === 'SCRIPT' || t.tagName === 'LINK') && t.src && t.src.indexOf('/assets/') !== -1) {
-          var k = 'chunk-reload';
-          if (!sessionStorage.getItem(k)) {
-            sessionStorage.setItem(k, '1');
-            window.location.reload();
+      (function() {
+        var k = 'chunk-reload';
+        // Catch script/link load errors (e.g. stale CSS or JS chunk 404)
+        window.addEventListener('error', function(e) {
+          var t = e.target;
+          if (t && (t.tagName === 'SCRIPT' || t.tagName === 'LINK') && (t.src || t.href)) {
+            if (!sessionStorage.getItem(k)) {
+              sessionStorage.setItem(k, '1');
+              window.location.reload();
+            }
           }
-        }
-      }, true);
-      // Clear the reload flag on successful page load so future failures can still trigger a reload
-      window.addEventListener('load', function() { sessionStorage.removeItem('chunk-reload'); });
+        }, true);
+        // Catch dynamic import() failures (lazy-loaded route chunks)
+        window.addEventListener('unhandledrejection', function(e) {
+          var msg = e.reason && (e.reason.message || String(e.reason));
+          if (msg && /Failed to fetch dynamically imported module|Loading chunk|load failed/i.test(msg)) {
+            if (!sessionStorage.getItem(k)) {
+              sessionStorage.setItem(k, '1');
+              window.location.reload();
+            }
+          }
+        });
+        // Clear flag on successful load so future failures can still trigger reload
+        window.addEventListener('load', function() { sessionStorage.removeItem(k); });
+      })();
     </script>
   </head>
   <body>
