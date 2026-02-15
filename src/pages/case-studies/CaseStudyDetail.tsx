@@ -139,7 +139,7 @@ export default function CaseStudyDetail() {
                   {sec.image && (
                     <div className={`col-12 col-lg-6 ${idx % 2 === 0 ? 'order-lg-last' : 'order-lg-first'}`}>
                       <div className="sp-detail__section-image">
-                        <img src={sec.image} alt={sec.imageAlt || sec.title} loading="lazy" />
+                        <img src={getAssetPath(sec.image)} alt={sec.imageAlt || sec.title} loading="lazy" />
                       </div>
                     </div>
                   )}
