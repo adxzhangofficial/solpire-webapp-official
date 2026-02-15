@@ -1,7 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link, useParams } from '@tanstack/react-router'
 import { getCaseStudyById } from '../../data/caseStudies'
 import { getAssetPath } from '../../lib/utils'
+import { useImagesLoaded } from '../../hooks'
 const caseStudyBg = getAssetPath('/assets/images/2026/c.png')
 const caseStudyBgMobile = getAssetPath('/assets/images/2026/case-study-bg-1.png')
 import '../case-studies/CaseStudies.css'
@@ -9,6 +10,8 @@ import '../case-studies/CaseStudies.css'
 export default function CaseStudyDetail() {
   const { id } = useParams({ from: '/case-studies/$id' })
   const cs = getCaseStudyById(id)
+  const pageRef = useRef<HTMLDivElement>(null)
+  const imagesReady = useImagesLoaded(pageRef, id)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -51,12 +54,19 @@ export default function CaseStudyDetail() {
   }
 
   return (
-    <div className="sp-detail">
+    <div className="sp-detail" ref={pageRef}>
+      {/* Page-level image preloader */}
+      {!imagesReady && (
+        <div className="sp-page-loader">
+          <div className="sp-page-loader__spinner" />
+        </div>
+      )}
+
       {/* ── Hero ── */}
       <section className="sp-detail__hero">
         <div className="sp-detail__hero-bg">
-          <img src={caseStudyBg} alt="" aria-hidden className="sp-detail__hero-bg-desktop" />
-          <img src={caseStudyBgMobile} alt="" aria-hidden className="sp-detail__hero-bg-mobile" />
+          <img src={caseStudyBg} alt="" aria-hidden className="sp-detail__hero-bg-desktop" style={{ opacity: imagesReady ? 1 : 0, transition: 'opacity 0.4s ease' }} />
+          <img src={caseStudyBgMobile} alt="" aria-hidden className="sp-detail__hero-bg-mobile" style={{ opacity: imagesReady ? 1 : 0, transition: 'opacity 0.4s ease' }} />
         </div>
         <div className="container sp-detail__hero-inner">
           {/* Breadcrumb */}

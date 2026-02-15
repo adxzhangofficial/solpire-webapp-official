@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import MeetingModal from "../../components/meeting-modal/MeetingModal"
 import { getAssetPath } from "../../lib/utils"
+import { useImagesLoaded } from '../../hooks'
 import {
   CompanyIntro,
   PainPoints,
@@ -35,6 +36,9 @@ export function Home2() {
     document.title = "Solpire - 重复检查器";
   }, []);
 
+  const pageRef = useRef<HTMLDivElement>(null)
+  const imagesReady = useImagesLoaded(pageRef)
+
   return (
     <>
       <MeetingModal 
@@ -42,6 +46,14 @@ export function Home2() {
         selectedDate={selectedMeetingDate}
         onClose={closeMeetingModal}
       />
+      <div ref={pageRef}>
+        {/* Page-level image preloader */}
+        {!imagesReady && (
+          <div className="sp-page-loader">
+            <div className="sp-page-loader__spinner" />
+          </div>
+        )}
+        <div style={{ opacity: imagesReady ? 1 : 0, transition: 'opacity 0.4s ease' }}>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-bg">
@@ -333,6 +345,8 @@ export function Home2() {
           })}
         </ul>
       </section>
+        </div>{/* end fade wrapper */}
+      </div>{/* end pageRef */}
     </>
   )
 }
