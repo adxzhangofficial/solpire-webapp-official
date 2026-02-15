@@ -12491,3 +12491,40 @@ body.requestotp-body .rg-page-bg {
 [data-theme="dark"] .sol-logo-wrapper img {
     transform: scale(1);
 }
+
+/* ===================================
+   Shared back-link style (used across case/product pages)
+   =================================== */
+.sp-cases-page__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: var(--sp-transition);
+}
+
+.sp-cases-page__back:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+:root:not([data-theme="dark"]) .sp-cases-page__back {
+    color: #4b4b4b !important;
+    border-color: rgba(75, 75, 75, 0.25);
+    background: rgba(75, 75, 75, 0.06);
+}
+
+:root:not([data-theme="dark"]) .sp-cases-page__back:hover {
+    color: #333 !important;
+    background: rgba(75, 75, 75, 0.12);
+    border-color: rgba(75, 75, 75, 0.4);
+}
