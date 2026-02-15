@@ -27,7 +27,7 @@ const products: Product[] = [
       </svg>
     ),
     color: '#6366f1',
-    link: '/duplicate-checker',
+    link: '/products/geooptix-3d',
     tags: ['3D模型', '查重', '资产管理', '智能制造']
   },
   {
