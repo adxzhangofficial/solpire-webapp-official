@@ -33,16 +33,16 @@ export const Navbar = () => {
                   {/* Column 1 */}
                   <div className="products-column">
                     <div className="products-category">
-                      <a href="/products/geooptix-3d" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }} className="products-category-title">
                         GeoOptix 3D 模型查重
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/geooptix-3d" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }} className="products-subitem">
                           三维模型智能查重
-                        </a>
-                        <a href="/products/geooptix-3d" className="products-subitem">
+                        </Link>
+                        <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }} className="products-subitem">
                           数字资产管理
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="products-category">
@@ -69,56 +69,56 @@ export const Navbar = () => {
                   {/* Column 2 */}
                   <div className="products-column">
                     <div className="products-category">
-                      <a href="/products/ai-3dgs-fitness" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'ai-3dgs-fitness' }} className="products-category-title">
                         AI+3DGS MR健身
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/ai-3dgs-fitness" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'ai-3dgs-fitness' }} className="products-subitem">
                           MR健身场景构建
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="products-category">
-                      <a href="/products/pv-power-prediction" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'pv-power-prediction' }} className="products-category-title">
                         光伏出力预测
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/pv-power-prediction" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'pv-power-prediction' }} className="products-subitem">
                           Transformer智能预测
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="products-category">
-                      <a href="/products/dormitory-power-monitor" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'dormitory-power-monitor' }} className="products-category-title">
                         宿舍用电预警
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/dormitory-power-monitor" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'dormitory-power-monitor' }} className="products-subitem">
                           AI NILM智能识别
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                   {/* Column 3 */}
                   <div className="products-column">
                     <div className="products-category">
-                      <a href="/products/industrial-aoi" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'industrial-aoi' }} className="products-category-title">
                         工业AOI视觉检测
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/industrial-aoi" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'industrial-aoi' }} className="products-subitem">
                           深度学习质检
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="products-category">
-                      <a href="/products/neuplc" className="products-category-title">
+                      <Link to="/products/$slug" params={{ slug: 'neuplc' }} className="products-category-title">
                         NeuPLC 灵枢
-                      </a>
+                      </Link>
                       <div className="products-subitems">
-                        <a href="/products/neuplc" className="products-subitem">
+                        <Link to="/products/$slug" params={{ slug: 'neuplc' }} className="products-subitem">
                           AI工业自动化编程
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -508,30 +508,30 @@ export const Navbar = () => {
             </svg>
           </button>
           <div className="mobile-nav-dropdown" id="mobile-products">
-            <a href="/products/geooptix-3d" className="mobile-nav-link">
+            <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }} className="mobile-nav-link">
               GeoOptix 3D 模型查重
-            </a>
+            </Link>
             <Link to="/solpire-canvas" className="mobile-nav-link">
               Solpire Canvas 网页生成
             </Link>
             <Link to="/solpire-avatar" className="mobile-nav-link">
               Solpire Avatar 数字人
             </Link>
-            <a href="/products/ai-3dgs-fitness" className="mobile-nav-link">
+            <Link to="/products/$slug" params={{ slug: 'ai-3dgs-fitness' }} className="mobile-nav-link">
               AI+3DGS MR健身
-            </a>
-            <a href="/products/pv-power-prediction" className="mobile-nav-link">
+            </Link>
+            <Link to="/products/$slug" params={{ slug: 'pv-power-prediction' }} className="mobile-nav-link">
               光伏出力预测
-            </a>
-            <a href="/products/dormitory-power-monitor" className="mobile-nav-link">
+            </Link>
+            <Link to="/products/$slug" params={{ slug: 'dormitory-power-monitor' }} className="mobile-nav-link">
               宿舍用电预警
-            </a>
-            <a href="/products/industrial-aoi" className="mobile-nav-link">
+            </Link>
+            <Link to="/products/$slug" params={{ slug: 'industrial-aoi' }} className="mobile-nav-link">
               工业AOI视觉检测
-            </a>
-            <a href="/products/neuplc" className="mobile-nav-link">
+            </Link>
+            <Link to="/products/$slug" params={{ slug: 'neuplc' }} className="mobile-nav-link">
               NeuPLC 灵枢
-            </a>
+            </Link>
           </div>
         </div>
         {/* About Us Section */}

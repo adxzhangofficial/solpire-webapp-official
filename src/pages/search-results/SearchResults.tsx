@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from '@tanstack/react-router'
 
 export function SearchResults() {
        useEffect(() => {
@@ -63,9 +64,9 @@ export function SearchResults() {
     <div id="resultsContainer">
       <div className="result-item" data-category="products">
         <span className="result-category">产品</span>
-        <a href="/duplicate-checker" className="result-title">
+        <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }} className="result-title">
           GeoOptix AI零件智研软件
-        </a>
+        </Link>
         <p className="result-description">
           基于人工智能的三维数字化资产管理平台，支持STEP、IGES、STL等30+种主流3D格式，提供AI智能识别、高精度3D建模、质量管控等核心功能，助力企业实现"零缺陷"生产目标。
         </p>
@@ -76,9 +77,9 @@ export function SearchResults() {
       </div>
       <div className="result-item" data-category="services">
         <span className="result-category">服务</span>
-        <a href="index.html#cooperation" className="result-title">
+        <Link to="/cooperation" className="result-title">
           AI算法研发与技术合作
-        </a>
+        </Link>
         <p className="result-description">
           提供灵活的交付方式：API接入、私有化部署、行业模型精调。融合文本生成、视觉感知与跨模态数据处理先进技术，深度挖掘行业特定数据价值，提供端到端闭环落地能力。
         </p>
@@ -117,9 +118,9 @@ export function SearchResults() {
       </div>
       <div className="result-item" data-category="services">
         <span className="result-category">服务</span>
-        <a href="index.html#support" className="result-title">
+        <Link to="/support-community" className="result-title">
           技术支持与咨询服务
-        </a>
+        </Link>
         <p className="result-description">
           提供全方位的技术支持服务，包括在线文档、视频教程、邮件支持和企业级专属技术顾问。专业团队7×24小时为您的AI项目保驾护航。
         </p>
@@ -143,9 +144,9 @@ export function SearchResults() {
       </div>
       <div className="result-item" data-category="docs">
         <span className="result-category">文档</span>
-        <a href="terms.html" className="result-title">
+        <Link to="/terms" className="result-title">
           服务条款
-        </a>
+        </Link>
         <p className="result-description">
           溯湃科技用户服务协议，包括使用协议、知识产权、用户责任、隐私保护等重要条款，请在使用我们的服务前仔细阅读。
         </p>
@@ -156,9 +157,9 @@ export function SearchResults() {
       </div>
       <div className="result-item" data-category="docs">
         <span className="result-category">文档</span>
-        <a href="privacy-policy.html" className="result-title">
+        <Link to="/privacy-policy" className="result-title">
           隐私政策
-        </a>
+        </Link>
         <p className="result-description">
           溯湃科技用户隐私保护政策，详细说明我们如何收集、使用、共享和保护您的个人信息，以及您享有的权利。
         </p>
@@ -178,16 +179,16 @@ export function SearchResults() {
         <h3>推荐内容</h3>
         <ul>
           <li>
-            <a href="/duplicate-checker">📦 GeoOptix AI零件智研软件</a>
+            <Link to="/products/$slug" params={{ slug: 'geooptix-3d' }}>📦 GeoOptix AI零件智研软件</Link>
           </li>
           <li>
-            <a href="index.html#cooperation">🤝 技术合作方案</a>
+            <Link to="/cooperation">🤝 技术合作方案</Link>
           </li>
           <li>
-            <a href="index.html#about">ℹ️ 关于我们</a>
+            <Link to="/about-us">ℹ️ 关于我们</Link>
           </li>
           <li>
-            <a href="index.html#support">💡 技术支持</a>
+            <Link to="/support-community">💡 技术支持</Link>
           </li>
         </ul>
       </div>

@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from '@tanstack/react-router'
 
 export function OtpRequest() {
        useEffect(() => {
@@ -74,7 +75,7 @@ export function OtpRequest() {
             </div>
           </form>
           <div className="signin-link">
-            已有账号？<a href="/signin">返回登录</a>
+            已有账号？<Link to="/signin">返回登录</Link>
           </div>
         </div>
       </div>

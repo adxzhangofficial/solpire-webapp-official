@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-
+import { Link } from '@tanstack/react-router'
 
 export function ForgetPassword() {
  useEffect(() => {
@@ -64,7 +64,7 @@ export function ForgetPassword() {
             </div>
           </form>
           <div className="signin-link">
-            记起密码了？<a href="signin.html">返回登录</a>
+            记起密码了？<Link to="/signin">返回登录</Link>
           </div>
         </div>
       </div>

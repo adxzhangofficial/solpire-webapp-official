@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from '@tanstack/react-router'
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
@@ -179,7 +180,7 @@ export const Signin = () => {
                 </div>
               </form>
               <div className="signin-link">
-                没有账号？<a href="/registration" data-testid="link-register">注册</a>
+                没有账号？<Link to="/registration" data-testid="link-register">注册</Link>
               </div>
             </div>
           </div>

@@ -119,9 +119,9 @@ export function SolpireAvatar() {
                 <a href="mailto:solpire@outlook.com" className="sp-btn sp-btn--primary">
                   申请演示
                 </a>
-                <a href="/contact-us" className="sp-btn sp-btn--outline">
+                <Link to="/contact-us" className="sp-btn sp-btn--outline">
                   联系销售
-                </a>
+                </Link>
               </div>
             </div>
           </div>

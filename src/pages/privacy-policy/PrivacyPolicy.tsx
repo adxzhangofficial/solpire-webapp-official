@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from '@tanstack/react-router'
 
 export function PrivacyPolicy() {
     useEffect(() => {
@@ -13,7 +14,7 @@ export function PrivacyPolicy() {
   return (
 <>
   <div className="back-home">
-    <a href="/" className="back-btn">
+    <Link to="/" className="back-btn">
       <svg
         width={16}
         height={16}
@@ -25,7 +26,7 @@ export function PrivacyPolicy() {
         <path d="M19 12H5M12 19l-7-7 7-7" />
       </svg>
       返回首页
-    </a>
+    </Link>
   </div>
   <section className="privacy-hero">
     <div className="container">
