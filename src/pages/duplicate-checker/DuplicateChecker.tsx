@@ -222,7 +222,7 @@ export function DuplicateChecker() {
   {/* Footer Image Section */}
   <section className="footer-image-section">
     <div className="footer-image-container">
-      <img src="/assets/images/ft_img.png" alt="Footer" className="footer-img" />
+      <img src={getAssetPath('/assets/images/ft_img.png')} alt="Footer" className="footer-img" />
     </div>
   </section>
 </>
