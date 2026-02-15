@@ -47,10 +47,18 @@ export function Home2() {
         onClose={closeMeetingModal}
       />
       <div ref={pageRef}>
-        {/* Page-level image preloader */}
+        {/* Reuse existing loading spinner until images are ready */}
         {!imagesReady && (
-          <div className="sp-page-loader">
-            <div className="sp-page-loader__spinner" />
+          <div className="loading-spinner">
+            <div className="loading-spinner-backdrop" />
+            <div className="loading-spinner-container">
+              <div className="spinner-circle" />
+              <img
+                src={getAssetPath('/assets/images/2026/loading-spinner-inner.png')}
+                alt="Solpire"
+                className="spinner-logo"
+              />
+            </div>
           </div>
         )}
         <div style={{ opacity: imagesReady ? 1 : 0, transition: 'opacity 0.4s ease' }}>
