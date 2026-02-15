@@ -1202,7 +1202,7 @@ body {
 
     /* Stack backgrounds: image on top, gradient underneath */
     background-image:
-        url("/solpire-webapp-official/assets/images/---1.png"),
+        url("/assets/images/---1.png"),
         linear-gradient(270deg, #000000 15.31%, rgba(0, 0, 0, 0.0001) 107.2%);
     background-repeat: no-repeat, no-repeat;
     background-position: 232px 21px, center;
@@ -1908,7 +1908,7 @@ body.home2-body .divider {
             rgba(255, 255, 255, 0.35) -40.16%,
             rgba(151, 156, 167, 0.16) 35.23%,
             #c4c4c4 131.23%),
-        url("/solpire-webapp-official/assets/images/Rectangle_14.png");
+        url("/assets/images/Rectangle_14.png");
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
@@ -4448,7 +4448,7 @@ h5 i {
     background-image:
         linear-gradient(rgb(255 255 255 / 45%),
             rgb(255 255 255 / 45%)),
-        url("/solpire-webapp-official/assets/images/-------1.png");
+        url("/assets/images/-------1.png");
     background-size:
         2% 1%,
         300% 182%;
@@ -4503,7 +4503,7 @@ h5 i {
     right: -16%;
     width: 50%;
     height: 100%;
-    background: url("/solpire-webapp-official/assets/images/index-pg/index-bg.png");
+    background: url("/assets/images/index-pg/index-bg.png");
     background-size: cover;
     background-position: center right;
     mix-blend-mode: multiply;
@@ -5327,7 +5327,7 @@ li.day.AlreadyOccupied {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/book.png");
+    background-image: url("/assets/images/book.png");
     background-size: contain;
     /* keeps aspect ratio */
     background-repeat: no-repeat;
@@ -6441,7 +6441,7 @@ top: -17% !important;
         width: 163% !important;
         opacity: 0.6 !important;
         height: 123% !important;
-        background-image: url("/solpire-webapp-official/assets/images/注册页面背景.png");
+        background-image: url("/assets/images/注册页面背景.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -6944,7 +6944,7 @@ body.signin-body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/signin/背景.webp");
+    background-image: url("/assets/images/signin/背景.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6960,7 +6960,7 @@ body.signin-body::before {
     transform: translate(-53%, -43%);
     width: 2500px;
     height: 2500px;
-    background-image: url("/solpire-webapp-official/assets/images/signin/主页首页背景.png");
+    background-image: url("/assets/images/signin/主页首页背景.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7000,7 +7000,7 @@ body.form-control.input-error {
     transform: translate(-53%, -43%);
     width: 2500px;
     height: 2500px;
-    background-image: url("/solpire-webapp-official/assets/images/registration/注册页面背景.png");
+    background-image: url("/assets/images/registration/注册页面背景.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7013,7 +7013,7 @@ body.form-control.input-error {
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url("/solpire-webapp-official/assets/images/registration/头像更改框.png");
+    background-image: url("/assets/images/registration/头像更改框.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7050,7 +7050,7 @@ body.forgetpassword-body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/signin/背景.webp");
+    background-image: url("/assets/images/signin/背景.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7066,7 +7066,7 @@ body.forgetpassword-body::before {
     transform: translate(-53%, -43%);
     width: 2500px;
     height: 2500px;
-    background-image: url("/solpire-webapp-official/assets/images/signin/主页首页背景.png");
+    background-image: url("/assets/images/signin/主页首页背景.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7079,7 +7079,7 @@ body.forgetpassword-body::before {
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url("/solpire-webapp-official/assets/images/signin/main_logo.png");
+    background-image: url("/assets/images/signin/main_logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7163,7 +7163,7 @@ body.forgetpassword-body::before {
                 position: relative;
                 width: 200px;
                 height: 200px;
-                background-image: url("/solpire-webapp-official/assets/images/signin/main_logo.png");
+                background-image: url("/assets/images/signin/main_logo.png");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -7197,7 +7197,7 @@ body.forgetpassword-body::before {
 
 .registration-container {
     opacity: 1;
-    background-image: url("/solpire-webapp-official/assets/images/signin/signin-form-bg.webp");
+    background-image: url("/assets/images/signin/signin-form-bg.webp");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -7411,7 +7411,7 @@ body.forgetpassword-body::before {
     width: 100%;
     height: 70px;
     opacity: 1;
-    background-image: url("/solpire-webapp-official/assets/images/signin/注册.webp");
+    background-image: url("/assets/images/signin/注册.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7920,7 +7920,7 @@ body.requestotp-body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/signin/背景.webp");
+    background-image: url("/assets/images/signin/背景.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7936,7 +7936,7 @@ body.requestotp-body::before {
     transform: translate(-53%, -43%);
     width: 2500px;
     height: 2500px;
-    background-image: url("/solpire-webapp-official/assets/images/signin/主页首页背景.png");
+    background-image: url("/assets/images/signin/主页首页背景.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7950,7 +7950,7 @@ body.requestotp-body::before {
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url("/solpire-webapp-official/assets/images/signin/main_logo.png");
+    background-image: url("/assets/images/signin/main_logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -7976,7 +7976,7 @@ body.searchresults-body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/solpire-webapp-official/assets/images/-------1.png");
+    background-image: url("/assets/images/-------1.png");
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -8330,15 +8330,15 @@ body.communitysupport-body {
 }
 
 .post-row.orange::before {
-    background-image: url("/solpire-webapp-official/assets/images/gear_icon.png");
+    background-image: url("/assets/images/gear_icon.png");
 }
 
 .post-row.light-blue::before {
-    background-image: url("/solpire-webapp-official/assets/images/help_icon.png");
+    background-image: url("/assets/images/help_icon.png");
 }
 
 .post-row.green::before {
-    background-image: url("/solpire-webapp-official/assets/images/discussion_icon.png");
+    background-image: url("/assets/images/discussion_icon.png");
 }
 
 .post-row.orange {
@@ -8534,7 +8534,7 @@ body.communitysupport-body {
     right: -16%;
     width: 50%;
     height: 100%;
-    background: url("/solpire-webapp-official/assets/images/logo-main.jpg");
+    background: url("/assets/images/logo-main.jpg");
     background-size: cover;
     background-position: center right;
     mix-blend-mode: multiply;
@@ -8640,7 +8640,7 @@ body.technicalsupport-body {
 
 /* body.technicalsupport-body::before {
                 content: "";
-                background-image: url("/solpire-webapp-official/assets/images/背景.png");
+                background-image: url("/assets/images/背景.png");
                 content: "";
                 position: absolute;
                 bottom: -19%;
@@ -8752,7 +8752,7 @@ body.technicalsupport-body {
                 left: -43%;   
                 width: 100%;
                 height: 100%;
-                background-image: url("/solpire-webapp-official/assets/images/背景.png");
+                background-image: url("/assets/images/背景.png");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -8795,7 +8795,7 @@ body.privacy-policy-body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/solpire-webapp-official/assets/images/-------1.png");
+    background-image: url("/assets/images/-------1.png");
     background-size: cover;
     background-position: center;
     opacity: 0.03;
@@ -9017,7 +9017,7 @@ body.terms-body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/solpire-webapp-official/assets/images/-------1.png");
+    background-image: url("/assets/images/-------1.png");
     background-size: cover;
     background-position: center;
     opacity: 0.03;
@@ -9253,7 +9253,7 @@ body.user-info-interface-body {
         "Helvetica Neue", Arial, sans-serif;
     min-height: 100vh;
     opacity: 1;
-    background: url("/solpire-webapp-official/assets/images/背景.png") no-repeat center top;
+    background: url("/assets/images/背景.png") no-repeat center top;
     background-position-y: 150px;
     background-size: cover;
     background-color: #fff;
@@ -9269,7 +9269,7 @@ body.user-info-interface-body {
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url("/solpire-webapp-official/assets/images/registration/头像更改框.png");
+    background-image: url("/assets/images/registration/头像更改框.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -9279,11 +9279,11 @@ body.user-info-interface-body {
 
 
 .first_box {
-    background-image: url("/solpire-webapp-official/assets/images/first_box.png");
+    background-image: url("/assets/images/first_box.png");
 }
 
 .second_box {
-    background-image: url("/solpire-webapp-official/assets/images/second_box.png");
+    background-image: url("/assets/images/second_box.png");
     margin-top: 30px;
 }
 
@@ -9674,7 +9674,7 @@ Home2 Page CSS
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/index-pg/index-bg.png");
+    background-image: url("/assets/images/index-pg/index-bg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -9699,7 +9699,7 @@ Home2 Page CSS
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/index-pg/3D模型语义快速搜索背景.png");
+    background-image: url("/assets/images/index-pg/3D模型语义快速搜索背景.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -9754,7 +9754,7 @@ Home2 Page CSS
     background-clip: text;
 
     /* Image inside text */
-    background-image: url("/solpire-webapp-official/assets/images/index-pg/img-text-gradient.png");
+    background-image: url("/assets/images/index-pg/img-text-gradient.png");
     background-repeat: no-repeat;
     background-position: 25% 46%;
     /* adjust as needed */
@@ -9794,7 +9794,7 @@ content: "";
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/solpire-webapp-official/assets/images/integrations-bg.png");
+    background-image: url("/assets/images/integrations-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10374,7 +10374,7 @@ width: 100%;
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: url("/solpire-webapp-official/assets/images/2026/bg-geooptix-cards.png") center / cover no-repeat;
+    background: url("/assets/images/2026/bg-geooptix-cards.png") center / cover no-repeat;
     opacity: 0.45;
     z-index: 0;
     pointer-events: none;
@@ -10449,7 +10449,7 @@ width: 100%;
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("/solpire-webapp-official/assets/images/index-pg/Desktop-bg-webp.webp");
+    background-image: url("/assets/images/index-pg/Desktop-bg-webp.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -10486,7 +10486,7 @@ width: 100%;
 
 
 .learn-hero {
-    background: url("/solpire-webapp-official/assets/images/-------1.png");
+    background: url("/assets/images/-------1.png");
     padding: 190px 1px 0px;
     background-size: contain;
     background-origin: content-box;
@@ -10501,7 +10501,7 @@ width: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/solpire-webapp-official/assets/images/-------1.png");
+    background-image: url("/assets/images/-------1.png");
     background-size: cover;
     background-position: center;
     opacity: 0.05;
@@ -10621,7 +10621,7 @@ width: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/solpire-webapp-official/assets/images/-------1.png");
+    background-image: url("/assets/images/-------1.png");
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -11464,7 +11464,7 @@ color: white;
 
 /* ---- Footer ---- */
 [data-theme="dark"] .site-footer {
-background: linear-gradient(179.94deg, rgb(0 0 0 / 90%) -40.16%, rgba(20, 22, 30, 0.85) 35.23%, #000dff 131.23%), url("/solpire-webapp-official/assets/images/Rectangle_14.png");
+background: linear-gradient(179.94deg, rgb(0 0 0 / 90%) -40.16%, rgba(20, 22, 30, 0.85) 35.23%, #000dff 131.23%), url("/assets/images/Rectangle_14.png");
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
@@ -12563,7 +12563,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/bg001.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/bg001.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--canvas > * {
   position: relative;
@@ -12580,7 +12580,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/digital-human.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/digital-human.png") center top / cover no-repeat;
   opacity: 0.35;
 }
 [data-theme="dark"] .sp-product-page--avatar > * {
@@ -12598,7 +12598,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/geo-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--geooptix-3d > * {
   position: relative;
@@ -12614,7 +12614,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/geo-bg.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/geo-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--ai-3dgs-fitness > * {
   position: relative;
@@ -12630,7 +12630,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/digital-human.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/digital-human.png") center top / cover no-repeat;
   opacity: 0.35;
 }
 [data-theme="dark"] .sp-product-page--pv-power-prediction > * {
@@ -12647,7 +12647,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/black-bg.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/black-bg.png") center top / cover no-repeat;
 }
 [data-theme="dark"] .sp-product-page--dormitory-power-monitor > * {
   position: relative;
@@ -12663,7 +12663,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/new-bg2.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/new-bg2.png") center top / cover no-repeat;
   opacity: 0.35;
   top: -281px;
 }
@@ -12681,7 +12681,7 @@ body.requestotp-body .rg-page-bg {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("/solpire-webapp-official/assets/images/2026/circuit-bg.png") center top / cover no-repeat;
+  background: url("/assets/images/2026/circuit-bg.png") center top / cover no-repeat;
   opacity: 0.35;
 }
 [data-theme="dark"] .sp-product-page--neuplc > * {

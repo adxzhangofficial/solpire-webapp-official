@@ -5,9 +5,7 @@ export const LoadingSpinner = () => {
   const [phase, setPhase] = useState<"loading" | "intro" | "done">("loading")
   const isHomePage = useRef(
     window.location.pathname === "/" || 
-    window.location.pathname === "" ||
-    window.location.pathname.endsWith("/solpire-webapp-official/") ||
-    window.location.pathname === "/solpire-webapp-official"
+    window.location.pathname === ""
   )
   const containerRef = useRef<HTMLDivElement>(null)
 

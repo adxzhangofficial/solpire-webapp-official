@@ -893,7 +893,7 @@ body.home-body {
 }
 
 [data-theme="dark"] .sp-product-card {
-  background: url("/solpire-webapp-official/assets/images/2026/card-bg.png") center / cover no-repeat;
+  background: url("/assets/images/2026/card-bg.png") center / cover no-repeat;
 }
 
 .sp-product-card:hover {
