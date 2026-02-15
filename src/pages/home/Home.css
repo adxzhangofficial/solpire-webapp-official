@@ -1435,7 +1435,7 @@ content: '';
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background: url(/assets/images/2026/new-bg2.png) center top / cover no-repeat;
+    background: url("/solpire-webapp-official/assets/images/2026/new-bg2.png") center top / cover no-repeat;
     opacity: 0.35;
     top: -281px;
 }
