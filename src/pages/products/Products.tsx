@@ -109,7 +109,7 @@ export default function Products() {
               const linkTarget = product.externalLink || `/products/${product.slug}`
               return (
                 <div key={product.id} className="col-12 col-md-6 col-lg-4">
-                  <a href={linkTarget} className="sp-product-card sp-product-card--page" style={{ textDecoration: 'none' }}>
+                  <Link to={linkTarget} className="sp-product-card sp-product-card--page" style={{ textDecoration: 'none' }}>
                     <div className="sp-product-card__glow" />
                     <div className="sp-product-card__icon" style={{ color: product.color }}>
                       {getIcon(product.iconKey)}
@@ -130,7 +130,7 @@ export default function Products() {
                         <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               )
             })}

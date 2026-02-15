@@ -12528,3 +12528,18 @@ body.requestotp-body .rg-page-bg {
     background: rgba(75, 75, 75, 0.12);
     border-color: rgba(75, 75, 75, 0.4);
 }
+
+/* Active state */
+.sp-cases-page__back.active {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff !important;
+    font-weight: 600;
+}
+
+:root:not([data-theme="dark"]) .sp-cases-page__back.active {
+    background: rgba(75, 75, 75, 0.14);
+    border-color: rgba(75, 75, 75, 0.5);
+    color: #333 !important;
+    font-weight: 600;
+}
